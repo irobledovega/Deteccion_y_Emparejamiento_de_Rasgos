@@ -2,11 +2,11 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 # Abre la imagen definida por el usuario
-try:
-  archivo = input(‘Nombre de la imagen a procesar: ‘)
-  input_img = cv.imread(archivo,0)
-except ValueError:
-  print(‘No se pudo abrir la imagen’)
+archivo = input('Nombre de la imagen a procesar: ')
+while not os.path.isfile(archivo):
+  archivo = input('No se encontro el archivo.\nVuelve a teclear el nombre: ')
+  pass
+input_img = cv.imread(archivo,0)
 # Crea un objeto tipo FAST con parametros por defecto
 fast = cv.FastFeatureDetector_create()
 # Detecta los rasgos
