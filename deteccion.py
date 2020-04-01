@@ -4,8 +4,9 @@ import os.path
 # from matplotlib import pyplot as plt
 
 # Define variables globales
-input_img = np.zeros((480,640,3), np.uint8)
+input_img = np.zeros((480, 640, 3), np.uint8)
 metodo = '1'
+
 
 # Funcion que se ejecuta al mover la barra de deslizamiento
 def detectar(x):
