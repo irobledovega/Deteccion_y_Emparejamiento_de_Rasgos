@@ -45,7 +45,7 @@ input_img = cv.imread(archivo,0)
 print('\nMetodos de Deteccion de Rasgos:\n(1)GFTT\n(2)FAST\n(3)AGAST\n(4)SIFT\n(5)SURF\n')
 metodo = input('Selecciona el metodo: ')
 
-#Crea una ventana y muetra la imagen
+#Crea una ventana y muestra la imagen
 cv.namedWindow('Deteccion de Rasgos', cv.WINDOW_NORMAL)
 cv.createTrackbar('Threshold','Deteccion de Rasgos',10,100,detectar)
 cv.imshow('Deteccion de Rasgos',input_img)
