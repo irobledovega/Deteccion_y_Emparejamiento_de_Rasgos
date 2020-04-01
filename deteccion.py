@@ -29,7 +29,7 @@ def detectar(x):
     else:
         return
     # Dibuja los rasgos detectados sobre la imagen original
-    output_img = cv.drawKeypoints(input_img, kp, None, color = (255,0,0))
+    output_img = cv.drawKeypoints(input_img, kp, None, color=(255, 0, 0))
     cv.imshow('Deteccion de Rasgos', output_img)
 
 
